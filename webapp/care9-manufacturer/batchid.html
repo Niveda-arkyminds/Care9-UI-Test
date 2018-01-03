@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Care9 | Manufacturer</title>
+<!-- Bootstrap -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+<link href="css/styles.css" rel="stylesheet">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script
+	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAixMrx71FebhGWZ_BWUpgxypV5TZyWDks&callback="
+	async defer></script>
+</head>
+<body>
+<div class="container-fluid">
+  <div class="row">
+    <nav class="navbar">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+        <a class="navbar-brand" href="#"><img src="images/care9_logo.png" height="36px"></a>
+        <p class="pull-left"> <a href="#" class="btn toggle-btn" data-toggle="offcanvas"><i class="fa fa-bars"></i></a> </p>
+      </div>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-bell-o"></i> (<b>2</b>)</a>
+          <ul class="dropdown-menu notify-drop">
+            <div class="notify-drop-title">
+              <div class="row">
+                <div class="col-md-6 col-sm-6 col-xs-6">Bildirimler (<b>2</b>)</div>
+                <div class="col-md-6 col-sm-6 col-xs-6 text-right"><a href="" class="rIcon allRead" data-tooltip="tooltip" data-placement="bottom" title="tümü okundu."><i class="fa fa-dot-circle-o"></i></a></div>
+              </div>
+            </div>
+            <!-- end notify title -->
+            <!-- notify content -->
+            <div class="drop-content">
+              <li>
+                <div class="col-md-3 col-sm-3 col-xs-3">
+                  <div class="notify-img"><img src="http://placehold.it/45x45" alt=""></div>
+                </div>
+                <div class="col-md-9 col-sm-9 col-xs-9 pd-l0"><a href="">Ahmet</a> yorumladı. <a href="">Çicek bahçeleri...</a> <a href="" class="rIcon"><i class="fa fa-dot-circle-o"></i></a>
+                  <hr>
+                  <p class="time">Şimdi</p>
+                </div>
+              </li>
+              <li>
+                <div class="col-md-3 col-sm-3 col-xs-3">
+                  <div class="notify-img"><img src="http://placehold.it/45x45" alt=""></div>
+                </div>
+                <div class="col-md-9 col-sm-9 col-xs-9 pd-l0"><a href="">Ahmet</a> yorumladı. <a href="">Çicek bahçeleri...</a> <a href="" class="rIcon"><i class="fa fa-dot-circle-o"></i></a>
+                  <p>Lorem ipsum sit dolor amet consilium.</p>
+                  <p class="time">1 Saat önce</p>
+                </div>
+              </li>
+              <li>
+                <div class="col-md-3 col-sm-3 col-xs-3">
+                  <div class="notify-img"><img src="http://placehold.it/45x45" alt=""></div>
+                </div>
+                <div class="col-md-9 col-sm-9 col-xs-9 pd-l0"><a href="">Ahmet</a> yorumladı. <a href="">Çicek bahçeleri...</a> <a href="" class="rIcon"><i class="fa fa-dot-circle-o"></i></a>
+                  <p>Lorem ipsum sit dolor amet consilium.</p>
+                  <p class="time">29 Dakika önce</p>
+                </div>
+              </li>
+              <li>
+                <div class="col-md-3 col-sm-3 col-xs-3">
+                  <div class="notify-img"><img src="http://placehold.it/45x45" alt=""></div>
+                </div>
+                <div class="col-md-9 col-sm-9 col-xs-9 pd-l0"><a href="">Ahmet</a> yorumladı. <a href="">Çicek bahçeleri...</a> <a href="" class="rIcon"><i class="fa fa-dot-circle-o"></i></a>
+                  <p>Lorem ipsum sit dolor amet consilium.</p>
+                  <p class="time">Dün 13:18</p>
+                </div>
+              </li>
+              <li>
+                <div class="col-md-3 col-sm-3 col-xs-3">
+                  <div class="notify-img"><img src="http://placehold.it/45x45" alt=""></div>
+                </div>
+                <div class="col-md-9 col-sm-9 col-xs-9 pd-l0"><a href="">Ahmet</a> yorumladı. <a href="">Çicek bahçeleri...</a> <a href="" class="rIcon"><i class="fa fa-dot-circle-o"></i></a>
+                  <p>Lorem ipsum sit dolor amet consilium.</p>
+                  <p class="time">2 Hafta önce</p>
+                </div>
+              </li>
+            </div>
+            <div class="notify-drop-footer text-center"> <a href=""><i class="fa fa-eye"></i> Tümünü Göster</a> </div>
+          </ul>
+        </li>
+        <li class="dropdown"> <a id="user-profile" href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="images/1.jpg" class="img-circle"> Jane Smith</a>
+          <ul class="dropdown-menu dropdown-block" role="menu">
+            <li><a href="#">Profil edition</a></li>
+            <li><a href="#">Admin</a></li>
+            <li><a href="#">Logout</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>
+<div class="container-fluid">
+  <div class="row row-offcanvas row-offcanvas-left">
+    <div class="sidebar-offcanvas" id="sidebar" role="navigation">
+      <ul class="">
+        <li> <a href="index.html">Dashboard</a></li>
+ 		<li> <a href="inventory.html">Inventory</a></li>
+        <li> <a href="distributor.html">Distributor</a></li>
+        <li> <a href="manage-request.html">Manage Request</a></li>
+        <li> <a href="batchid.html">Batch ID</a></li>
+        <li> <a href="login.html">Logout</a></li>
+      </ul>
+    </div>
+    <!--/span-->
+    <div class="main-content">
+      <div class="create-section  form-section">
+        <div class="page-title">
+          <h4 class="">Batch ID</h4>
+        </div>
+        <div class="section">
+          <div class="row">
+            <div class="col-md-8 form-group">
+              <label for="text1">Search Batch ID</label>
+              <select class="form-control form-group">
+                              <option>A112345</option>
+                              <option>B112678</option>
+                              <option>C112345</option>
+                              <option>D879061</option>
+                              <option>E541230</option>
+                            </select>
+                            
+               <div class="map-section">
+          <div id="map" style="height: 500px; width: 850px;"></div>
+          </div>             
+                            
+            </div>  
+             <div class="col-md-4">
+             <h4>Batch ID Information</h4>
+             <div class="batch-info">
+             <table class="">            
+            <tbody>
+              <tr>
+                <td>Batch ID</td>
+                <td>: A112345</td>                
+              </tr>
+              <tr>
+                <td>Distributor Name</td>
+                <td>: Prime Pharma</td>                
+              </tr>
+              <tr>
+                <td>Address</td>
+                <td>: 20, Madhapur Main Road, Madhapur, Hyderabad, Telangana - 500081</td>                
+              </tr>
+              <tr>
+                <td>Contact Number</td>
+                <td>: 9876543210</td>                
+              </tr>
+              <tr>
+                <td>Product</td>
+                <td>: Crocin</td>                
+              </tr>
+              <tr>
+                <td>Quantity</td>
+                <td>: 100</td>                
+              </tr>
+              <tr>
+                <td>Order Date</td>
+                <td>: 16/11/2017</td>                
+              </tr>
+              <tr>
+                <td>Manufacture Date</td>
+                <td>: 16/11/2017</td>                
+              </tr>
+              <tr>
+                <td>Expired Date</td>
+                <td>: 15/11/2019</td>                
+              </tr>
+              <tr>
+                <td>Cost Price</td>
+                <td>: 5</td>                
+              </tr>
+              <tr>
+                <td>Total Price</td>
+                <td>: 500</td>                
+              </tr>
+            </tbody>
+          </table>
+             </div>
+             </div>         
+          </div>
+          
+        </div>
+      </div>
+      
+      
+    </div>
+    <!--/span-->
+  </div>
+  <!--/row-->
+  <div class="footer">
+    <div class="text-right">© 2017 Care9. All Rights Reserved. </div>
+  </div>
+</div>
+<!-- /.container -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/sidebar.js"></script>
+<script>
+var locations = [
+				[ 'Bondi Beach', 17.416005, 78.405397, 4,
+						'images/manufacturer.png' ],
+				[ 'Coogee Beach', 17.41605, 78.30537, 5,
+						'images/distributor.png' ],
+				[ 'Cronulla Beach', 17.4165, 78.3757, 3, 'images/consumer.png' ],
+				[ 'Manly Beach', 17.415, 78.207, 2, 'images/pharmacy.png',
+						'Murugan Pharmacy','9898989899','murugan@gmail.com' ],
+				[ 'Bondi Beach', 17.41005, 78.45397, 4,
+						'images/manufacturer.png' ],
+				[ 'Coogee Beach', 17.4165, 78.3037, 5,
+						'images/distributor.png' ],
+				[ 'Cronulla Beach', 17.165, 78.757, 3, 'images/consumer.png' ],
+				[ 'Manly Beach', 17.45, 78.27, 2, 'images/pharmacy.png',
+						'Iyyappan Medicals','9898989899','iyyappan@gmail.com'],
+				[ 'Bondi Beach', 17.5, 78.7, 7,
+						'images/manufacturer.png' ],
+				[ 'Coogee Beach', 17.4160005, 78.30000537, 6,
+						'images/distributor.png' ],
+				[ 'Cronulla Beach', 17.41689895, 78.38989757, 3, 'images/consumer.png' ],
+				[ 'Manly Beach', 17.41085, 78.36207, 2, 'images/pharmacy.png',
+						'Vcare Medicals','9898989899','vcare@gmail.com' ] ];
+		setTimeout(
+				function() {
+
+					try {
+						var options = {
+							enableHighAccuracy : true
+						};
+
+						var mapOptions = {
+							zoom : 11,
+							scrollwheel : false,
+							center : new google.maps.LatLng(17.4160005,
+									78.4053917),
+							mapTypeId : google.maps.MapTypeId.TYPE_ROAD
+						}
+
+						var mapss = new google.maps.Map(document
+								.getElementById('map'), mapOptions);
+						var markers = [];
+						var infoWindow = new google.maps.InfoWindow();
+						var createMarkerStore = function(info) {
+							console.log(info[1], info[2]);
+							console.log(info[4]);
+							// var image = 'img/src/medical.png';
+							var image = {
+								url : info[4],
+								scaledSize : new google.maps.Size(35, 45)
+
+							}
+							var marker = new google.maps.Marker({
+								map : mapss,
+								position : new google.maps.LatLng(info[1],
+										info[2]),
+								icon : image,
+							});
+							marker.content = '<div class="infoWindowContent">'
+									+ '<table class="map-info">'
+									+ '<tr>'
+									+ '<td>'
+									+ '<i class="fa fa-phone m-r-xs" style="padding-right:5px"></i>'
+									+ '</td>'
+									+ '<td>'
+									+ info[6]
+									+ '</td>'
+									+ '</tr>'
+									+ '<tr>'
+									+ '<td>'
+									+ '<i class="fa fa-envelope m-r-xs" style="padding-right:5px"></i>'
+									+ '</td>'
+									+ '<td>'
+									+ info[7]
+									+ '</td>'
+									+ '</tr>'
+									+ '</table>'
+									+ '<div><a class="btn btn-link" style="padding:0">View</i></a>'
+								 '</div></div>';
+								 if(info[4].includes('pharmacy')){
+							google.maps.event.addListener(marker, 'click',
+									function() {
+										infoWindow.setContent('<h3>' + info[5]
+												+ '</h3>' + marker.content);
+										infoWindow.open(mapss, marker);
+									});
+								}
+							markers.push(marker);
+						}
+						for (i = 0; i < locations.length; i++) {
+							createMarkerStore(locations[i]);
+							console.log(locations[i]);
+						}
+
+						var openInfoWindow = function(e, selectedMarker) {
+							e.preventDefault();
+							google.maps.event.trigger(selectedMarker, 'click');
+						}
+					} catch (e) {
+						console.log(e);
+					}
+				}, 3000);
+</script>
+<style>
+.infoWindowContent {
+    font-size: 12px !important;
+    padding: 0 15px 0 15px;
+}
+table.map-info {
+    max-width: 300px;
+    table-layout: auto;
+}
+.gm-style-iw h3 {
+    color: #0186c8;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 15px 15px;
+    margin: 0 !important;
+}
+.gm-style .gm-style-iw {
+    font-weight: 300;
+    font-size: 13px;
+    overflow: hidden;
+}
+.gm-style-iw {
+    margin: -8px -14px;
+    width: calc(100% - 2px) !important;
+    background: #fff;
+}
+</style>
+</body>
+</html>
