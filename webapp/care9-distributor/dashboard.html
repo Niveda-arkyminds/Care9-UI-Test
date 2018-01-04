@@ -111,7 +111,8 @@
 						<h4>Pharmacies Sales Chart</h4>
 					</div>
 					<hr class="m-t-n">
-					<div id="chartdiv"></div>
+					<sales-chart ></sales-chart>  
+					
 				</div>
 			</div>
 			<div class="col-lg-4">
@@ -120,180 +121,12 @@
 						<h4>Product Sales</h4>
 					</div>
 					<hr class="m-t-n">
-					<div id="chartdiv2"></div>
+					<product-chart ></product-chart>
+					
 				</div>
 			</div>
 		</div>
 	</div>
 </div>
 
-<script>
-var chart = AmCharts.makeChart("chartdiv", {
-  "type": "serial",
-  "theme": "none",
-  "marginRight": 70,
-  "dataProvider": [{
-    "country": "Prime Pharmacy",
-    "visits": 30250,
-    "color": "#FF0F00"
-  }, {
-    "country": "Sriram Pharmacy",
-    "visits": 18820,
-    "color": "#FF6600"
-  }, {
-    "country": "Sun Pharmacy",
-    "visits": 18090,
-    "color": "#FF9E01"
-  }, {
-    "country": "Pheonix Pharmacy",
-    "visits": 13220,
-    "color": "#FCD202"
-  }, {
-    "country": "Med Pharmacy",
-    "visits": 11220,
-    "color": "#F8FF01"
-  }, {
-    "country": "Chemi Pharmacy",
-    "visits": 11140,
-    "color": "#B0DE09"
-  },  {
-    "country": "Maple Medicals",
-    "visits": 4410,
-    "color": "#CD0D74"
-  }],
-  "valueAxes": [{
-    "axisAlpha": 0,
-    "position": "left",
-    "title": "Total Sales"
-  }],
-  "startDuration": 1,
-  "graphs": [{
-    "balloonText": "<b>[[category]]: [[value]]</b>",
-    "fillColorsField": "color",
-    "fillAlphas": 0.9,
-    "lineAlpha": 0.2,
-    "type": "column",
-    "valueField": "visits"
-  }],
-  "chartCursor": {
-    "categoryBalloonEnabled": false,
-    "cursorAlpha": 0,
-    "zoomable": false
-  },
-  "categoryField": "country",
-  "categoryAxis": {
-    "gridPosition": "start",
-    "labelRotation": 45
-  },
-  "export": {
-    "enabled": false
-  }
-
-});
-</script>
-
-<script>
-var gaugeChart = AmCharts.makeChart("chartdiv2", {
-  "type": "gauge",
-  "theme": "light",
-  "axes": [{
-    "axisAlpha": 0,
-    "tickAlpha": 0,
-    "labelsEnabled": false,
-    "startValue": 0,
-    "endValue": 100,
-    "startAngle": 0,
-    "endAngle": 270,
-    "bands": [{
-      "color": "#eee",
-      "startValue": 0,
-      "endValue": 100,
-      "radius": "100%",
-      "innerRadius": "85%"
-    }, {
-      "color": "#84b761",
-      "startValue": 0,
-      "endValue": 80,
-      "radius": "100%",
-      "innerRadius": "85%",
-      "balloonText": "90%"
-    }, {
-      "color": "#eee",
-      "startValue": 0,
-      "endValue": 100,
-      "radius": "80%",
-      "innerRadius": "65%"
-    }, {
-      "color": "#fdd400",
-      "startValue": 0,
-      "endValue": 35,
-      "radius": "80%",
-      "innerRadius": "65%",
-      "balloonText": "35%"
-    }, {
-      "color": "#eee",
-      "startValue": 0,
-      "endValue": 100,
-      "radius": "60%",
-      "innerRadius": "45%"
-    }, {
-      "color": "#cc4748",
-      "startValue": 0,
-      "endValue": 92,
-      "radius": "60%",
-      "innerRadius": "45%",
-      "balloonText": "92%"
-    }, {
-      "color": "#eee",
-      "startValue": 0,
-      "endValue": 100,
-      "radius": "40%",
-      "innerRadius": "25%"
-    }, {
-      "color": "#67b7dc",
-      "startValue": 0,
-      "endValue": 68,
-      "radius": "40%",
-      "innerRadius": "25%",
-      "balloonText": "68%"
-    }]
-  }],
-  "allLabels": [{
-    "text": "Crocin",
-    "x": "49%",
-    "y": "5%",
-    "size": 15,
-    "bold": true,
-    "color": "#84b761",
-    "align": "right"
-  }, {
-    "text": "Pan 40",
-    "x": "49%",
-    "y": "15%",
-    "size": 15,
-    "bold": true,
-    "color": "#fdd400",
-    "align": "right"
-  }, {
-    "text": "Vomikind Plus",
-    "x": "49%",
-    "y": "24%",
-    "size": 15,
-    "bold": true,
-    "color": "#cc4748",
-    "align": "right"
-  }, {
-    "text": "Dolo 650",
-    "x": "49%",
-    "y": "33%",
-    "size": 15,
-    "bold": true,
-    "color": "#67b7dc",
-    "align": "right"
-  }],
-  "export": {
-    "enabled": false
-  }
-});
-</script>
 
