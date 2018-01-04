@@ -38,49 +38,69 @@ app.controller('DashBoardController', [ '$scope', function($scope) {
 
 } ]);
 app.controller('InventoryController', ['$scope', function($scope) {
+	$scope.showTitle=true;
 	
 	$scope.showForm = false;
+	
 	$scope.addNewproduct = function() {
 		$scope.showForm = true;
+	$scope.showTitle=false;
 	};
 	$scope.cancel = function() {
 		$scope.showForm = false;
+		$scope.showTitle=true;
 	};
 } ]);
-app.controller('ManageRequestController', [ '$scope', function($scope) {
+app.controller('ManageRequestController', [ '$scope', function($scope) 
+	{
 	$scope.showInformation = false;
-	$scope.showDetails = function() {
+	
+	$scope.showDetails = function() 
+	
+	{
 		$scope.showInformation = true;
 	};
-	$scope.hideDetails = function() {
+	
+	$scope.hideDetails = function() 
+	{
 		$scope.showInformation = false;
 	};
 } ]);
 app.controller('ManufacturerController', [ '$scope', function($scope) {
+	
+	$scope.showTitle=true;
 	$scope.showForm = false;
 	$scope.addNewManufacturer = function() {
+		$scope.showTitle=false;
 		$scope.showForm = true;
 	};
 	$scope.cancel = function() {
 		$scope.showForm = false;
+		$scope.showTitle=true;
 	};
 } ]);
 app.controller('PharmanciesController', [ '$scope', function($scope) {
+	$scope.showTitle=true;
 	$scope.showForm = false;
 	$scope.addNewPharmancies = function() {
+		$scope.showTitle=false;
 		$scope.showForm = true;
 	};
 	$scope.cancel = function() {
+		$scope.showTitle=true;
 		$scope.showForm = false;
 	};
 } ]);
 app.controller('SendRequestController', [ '$scope', function($scope) {
+	$scope.showTitle=true;
 	$scope.showForm = false;
 	$scope.createOrder = function() {
 		$scope.showForm = true;
+		$scope.showTitle=false;
 	};
 	$scope.cancel = function() {
 		$scope.showForm = false;
+		$scope.showTitle=true;
 	};
 } ]);
 
