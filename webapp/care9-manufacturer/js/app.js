@@ -5,8 +5,8 @@ app.config(function($routeProvider) {
 	$routeProvider
 
 	.when("/", {
-		templateUrl : "dashboard.html",
-		controller : "DashBoardController"
+		templateUrl : "dashboard.html"
+		
 	}).when("/dashboard", {
 		templateUrl : "dashboard.html",
 		controller : "DashBoardController"
@@ -41,9 +41,7 @@ app.config(function($routeProvider) {
 
 
 
-app.controller('DashBoardController', [ '$scope', function($scope) {
 
-} ]);
 app.controller('InventoryController', ['$scope', function($scope) {
 	$scope.showTitle=true;
 	
