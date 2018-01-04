@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="distributor">
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,7 +18,7 @@
       <!-- Brand and toggle get grouped for better mobile display -->
       <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-        <a class="navbar-brand" href="#"><img src="images/care9_logo.png" height="36px"></a>
+        <a class="navbar-brand" href="#/dashboard"><img src="images/care9_logo.png" height="36px"></a>
         <p class="pull-left"> <a href="#" class="btn toggle-btn" data-toggle="offcanvas"><i class="fa fa-bars"></i></a> </p>
       </div>
       <ul class="nav navbar-nav navbar-right">
@@ -102,157 +102,33 @@
   <div class="row row-offcanvas row-offcanvas-left">
     <div class="sidebar-offcanvas" id="sidebar" role="navigation">
       <ul class="">
-         <li> <a href="index.html">Dashboard</a></li>
- 		<li> <a href="inventory.html">Inventory</a></li>
-         <li> <a href="distributor.html">Distributor</a></li>
-         <li> <a href="manage-request.html">Manage Request</a></li>
-         <li> <a href="batchid.html">Batch ID</a></li>
-         <li> <a href="login.html">Logout</a></li>
-      </ul>
+				<li><a href="#/dashboard">Dashboard</a></li>
+	 <li><a href="#/inventory">Inventory</a></li>
+         <li> <a href="#/distributor">Distributor</a></li>
+         <li> <a href="#/manage-request">Manage Request</a></li>
+         <li> <a href="#/batchid">Batch ID</a></li>
+         <li> <a href="#/logout">Logout</a></li>	
+</ul>
+
     </div>
+    <div ng-view></div>
     <!--/span-->
-    <div class="main-content">
-      
-      <div class="page-title">
-        <h4 class="">Dashboard </h4>
-      </div>
-      <div class="section">
-        <div class="row">
-      <div class="col-lg-3">
-        <div class="panel">
-          <div class="panel-heading">
-            <div class="row">
-              <div class="col-xs-6">
-                <i class="fa fa-inr fa-3x text-primary"></i>
-              </div>
-              <div class="col-xs-6 text-right">
-                <p class="announcement-heading">10000</p>
-                <p class="announcement-text">Sales</p>
-              </div>
-            </div>
-          </div>
-          <a href="#">
-            <div class="panel-footer announcement-bottom">
-              <div class="row">
-                <div class="col-xs-12 text-right">
-                  <i class="fa fa-long-arrow-right"></i>
-                </div>
-              </div>
-            </div>
-          </a>
-        </div>
-      </div>
-      <div class="col-lg-3">
-        <div class="panel">
-          <div class="panel-heading">
-            <div class="row">
-              <div class="col-xs-6">
-                <i class="fa fa-barcode fa-3x text-primary"></i>
-              </div>
-              <div class="col-xs-6 text-right">
-                <p class="announcement-heading">12</p>
-                <p class="announcement-text"> Products</p>
-              </div>
-            </div>
-          </div>
-          <a href="#">
-            <div class="panel-footer announcement-bottom">
-              <div class="row">
-                <div class="col-xs-12 text-right">
-                  <i class="fa fa-long-arrow-right"></i>
-                </div>
-              </div>
-            </div>
-          </a>
-        </div>
-      </div>
-      <div class="col-lg-3">
-        <div class="panel">
-          <div class="panel-heading">
-            <div class="row">
-              <div class="col-xs-6">
-                <i class="fa fa-users fa-3x text-primary"></i>
-              </div>
-              <div class="col-xs-6 text-right">
-                <p class="announcement-heading">18</p>
-                <p class="announcement-text">Distributors</p>
-              </div>
-            </div>
-          </div>
-          <a href="#">
-            <div class="panel-footer announcement-bottom">
-              <div class="row">
-                <div class="col-xs-12 text-right">
-                  <i class="fa fa-long-arrow-right"></i>
-                </div>
-              </div>
-            </div>
-          </a>
-        </div>
-      </div>
-      <div class="col-lg-3">
-        <div class="panel">
-          <div class="panel-heading">
-            <div class="row">
-              <div class="col-xs-6">
-                <i class="fa fa-comments fa-3x text-primary"></i>
-              </div>
-              <div class="col-xs-6 text-right">
-                <p class="announcement-heading">9000</p>
-                <p class="announcement-text"> Orders!</p>
-              </div>
-            </div>
-          </div>
-          <a href="#">
-            <div class="panel-footer">
-              <div class="row">                
-                <div class="col-xs-12 text-right">
-                  <i class="fa fa-long-arrow-right"></i>
-                </div>
-              </div>
-            </div>
-          </a>
-        </div>
-      </div>
-    </div>
-      </div>
-      <div class="section">
-        <div class="row">
-      <div class="col-lg-8">
-        <div class="panel">
-        <div class="panel-heading">
-        <h4>Distributor Sales Chart</h4>
-        </div>
-        <hr class="m-t-n">
-            <div id="chartdiv"></div>	        
-        </div>
-      </div>
-      <div class="col-lg-4">
-        <div class="panel">
-           <div class="panel-heading">
-        <h4>Product Sales</h4>
-        </div>
-        <hr class="m-t-n">
-          <div id="chartdiv2"></div>
-        </div>
-      </div>
-    </div>
-      </div>
-    </div>
     
-    
-    
-    <!--/span-->
-  </div>
   <!--/row-->
   <div class="footer">
-        <div class="text-right">© 2017 Care9. All Rights Reserved. </div>
+        <div class="text-right">© 2017 Care9. All Rights Reserved.. </div>
       </div>
 </div>
 <!-- /.container -->
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-route.min.js"></script>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/sidebar.js"></script>
+
 
 
 <script src="https://www.amcharts.com/lib/3/amcharts.js"></script>
@@ -264,175 +140,9 @@
 
 
 
-<script>
-var chart = AmCharts.makeChart("chartdiv", {
-  "type": "serial",
-  "theme": "none",
-  "marginRight": 70,
-  "dataProvider": [{
-    "country": "Prime Pharma",
-    "visits": 302500,
-    "color": "#FF0F00"
-  }, {
-    "country": "Sriram Pharma",
-    "visits": 188200,
-    "color": "#FF6600"
-  }, {
-    "country": "Sun Pharma",
-    "visits": 180900,
-    "color": "#FF9E01"
-  }, {
-    "country": "Pheonix Drugs",
-    "visits": 132200,
-    "color": "#FCD202"
-  }, {
-    "country": "Med Chemicals",
-    "visits": 112200,
-    "color": "#F8FF01"
-  }, {
-    "country": "Chemi Drugs",
-    "visits": 111400,
-    "color": "#B0DE09"
-  },  {
-    "country": "Maple Pharma",
-    "visits": 44100,
-    "color": "#CD0D74"
-  }],
-  "valueAxes": [{
-    "axisAlpha": 0,
-    "position": "left",
-    "title": "Total Sales"
-  }],
-  "startDuration": 1,
-  "graphs": [{
-    "balloonText": "<b>[[category]]: [[value]]</b>",
-    "fillColorsField": "color",
-    "fillAlphas": 0.9,
-    "lineAlpha": 0.2,
-    "type": "column",
-    "valueField": "visits"
-  }],
-  "chartCursor": {
-    "categoryBalloonEnabled": false,
-    "cursorAlpha": 0,
-    "zoomable": false
-  },
-  "categoryField": "country",
-  "categoryAxis": {
-    "gridPosition": "start",
-    "labelRotation": 45
-  },
-  "export": {
-    "enabled": false
-  }
 
-});
-</script>
+<script src="js/app.js"></script>
 
-<script>
-var gaugeChart = AmCharts.makeChart("chartdiv2", {
-  "type": "gauge",
-  "theme": "light",
-  "axes": [{
-    "axisAlpha": 0,
-    "tickAlpha": 0,
-    "labelsEnabled": false,
-    "startValue": 0,
-    "endValue": 100,
-    "startAngle": 0,
-    "endAngle": 270,
-    "bands": [{
-      "color": "#eee",
-      "startValue": 0,
-      "endValue": 100,
-      "radius": "100%",
-      "innerRadius": "85%"
-    }, {
-      "color": "#84b761",
-      "startValue": 0,
-      "endValue": 80,
-      "radius": "100%",
-      "innerRadius": "85%",
-      "balloonText": "90%"
-    }, {
-      "color": "#eee",
-      "startValue": 0,
-      "endValue": 100,
-      "radius": "80%",
-      "innerRadius": "65%"
-    }, {
-      "color": "#fdd400",
-      "startValue": 0,
-      "endValue": 35,
-      "radius": "80%",
-      "innerRadius": "65%",
-      "balloonText": "35%"
-    }, {
-      "color": "#eee",
-      "startValue": 0,
-      "endValue": 100,
-      "radius": "60%",
-      "innerRadius": "45%"
-    }, {
-      "color": "#cc4748",
-      "startValue": 0,
-      "endValue": 92,
-      "radius": "60%",
-      "innerRadius": "45%",
-      "balloonText": "92%"
-    }, {
-      "color": "#eee",
-      "startValue": 0,
-      "endValue": 100,
-      "radius": "40%",
-      "innerRadius": "25%"
-    }, {
-      "color": "#67b7dc",
-      "startValue": 0,
-      "endValue": 68,
-      "radius": "40%",
-      "innerRadius": "25%",
-      "balloonText": "68%"
-    }]
-  }],
-  "allLabels": [{
-    "text": "Crocin",
-    "x": "49%",
-    "y": "5%",
-    "size": 15,
-    "bold": true,
-    "color": "#84b761",
-    "align": "right"
-  }, {
-    "text": "Pan 40",
-    "x": "49%",
-    "y": "15%",
-    "size": 15,
-    "bold": true,
-    "color": "#fdd400",
-    "align": "right"
-  }, {
-    "text": "Vomikind Plus",
-    "x": "49%",
-    "y": "24%",
-    "size": 15,
-    "bold": true,
-    "color": "#cc4748",
-    "align": "right"
-  }, {
-    "text": "Dolo 650",
-    "x": "49%",
-    "y": "33%",
-    "size": 15,
-    "bold": true,
-    "color": "#67b7dc",
-    "align": "right"
-  }],
-  "export": {
-    "enabled": false
-  }
-});
-</script>
 
 
 </body>
